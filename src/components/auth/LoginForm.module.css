@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 110px 0 0 0;
+}
+
+.p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input {
+  height: 40px;
+  width: 245px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 15px;
+  background-color: #e7e7e7;
+  border: none;
+}
+
+.tagContainer {
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tagContainer a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn {
+  width: 140px;
+  height: 35px;
+  border: none;
+  background-color: #8282f6;
+  color: white;
+  font-size: 1.3rem;
+}
