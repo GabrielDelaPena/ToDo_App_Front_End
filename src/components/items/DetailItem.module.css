@@ -39,3 +39,8 @@
   color: white;
   font-size: 1.1rem;
 }
+
+.btnEdit {
+  text-decoration: none;
+  color: white;
+}

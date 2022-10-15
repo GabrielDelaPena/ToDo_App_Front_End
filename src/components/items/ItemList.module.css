@@ -2,3 +2,19 @@ ul {
   height: 480px;
   overflow: scroll;
 }
+
+.btnAdd {
+  border: none;
+  height: 30px;
+  width: 85px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btnAddLink {
+  text-decoration: none;
+  color: black;
+}

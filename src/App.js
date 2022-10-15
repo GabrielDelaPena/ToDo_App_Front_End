@@ -5,17 +5,21 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NewItem from "./pages/NewItem";
 import Signup from "./pages/Signup";
+import PrivateRoutes from "./utils/PrivateRoutes";
 
 function App() {
+  // let auth = sessionStorage.getItem("auth-token");
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route element={<PrivateRoutes />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/addItem" element={<NewItem />} />
+          <Route path="/editItem/:id" element={<EditItem />} />
+          <Route path="/detail/:id" element={<Detail />} />
+        </Route>
+        <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/addItem" element={<NewItem />} />
-        <Route path="/editItem" element={<EditItem />} />
-        <Route path="/detail" element={<Detail />} />
       </Routes>
     </div>
   );
